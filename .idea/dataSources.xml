@@ -7,5 +7,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\webroot\dbs\test.db</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="WhereAreThey.db" uuid="9f4ae296-a5df-41fd-831b-520c2df8bdd7">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\webroot\dbs\WhereAreThey.db</jdbc-url>
+    </data-source>
   </component>
 </project>

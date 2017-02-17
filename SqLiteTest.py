@@ -43,7 +43,11 @@ def close_connection(exception):
 
 @app.route('/')
 def index():
-    cur = get_db().cursor()
+    # init_db()
+    res = ""
+    for user in query_db('select * from users'):
+        res += "%s %s %s <BR>" % (user[0], user[1], user[2])
+    return res
 
 
 if __name__ == '__main__':
